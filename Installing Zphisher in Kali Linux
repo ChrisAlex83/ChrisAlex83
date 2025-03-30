@@ -1,0 +1,35 @@
+# Installing Zphisher in Kali Linux
+
+## Overview
+This project provides a step-by-step guide on installing and running **Zphisher**, an open-source phishing tool, on Kali Linux. Zphisher is commonly used for ethical hacking, penetration testing, and cybersecurity research. This guide ensures proper installation while following ethical and legal guidelines.
+
+## Objectives
+- Install Zphisher on Kali Linux efficiently.
+- Ensure all dependencies are properly installed.
+- Provide a secure and ethical approach to using penetration testing tools.
+
+## Prerequisites
+- A system running **Kali Linux**.
+- Basic knowledge of the **Linux terminal**.
+- Ethical and legal permission for penetration testing.
+
+## Installation Steps
+1. **Update System**:
+   sudo apt update && sudo apt upgrade -y
+
+2. **Install Dependencies**
+   sudo apt install git curl -y
+
+3. **Clone the Zphsher Repository**
+   git clone https://github.com/htr-tech/zphisher.git
+
+4. **Navigate to the Zphisher Directory**
+   cd zphisher
+
+5. **Provide Execution Permission**
+   chmod +x zphisher.sh
+
+6. **Run Zphisher**
+   bash zphisher.sh
+
+7. From this point you can choose whatever social media platform you want along with the options after. 
