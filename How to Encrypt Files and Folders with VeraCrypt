@@ -1,0 +1,91 @@
+# 🔐 How to Encrypt Files and Folders with VeraCrypt
+
+VeraCrypt is a free and open-source tool that allows you to encrypt your data for enhanced security. This guide walks you through the steps to create an encrypted container for your sensitive files and folders using VeraCrypt on **Windows**, **macOS**, or **Linux**.
+
+---
+
+## 🧰 1. Install VeraCrypt
+
+- Download from the official site: [https://www.veracrypt.fr](https://www.veracrypt.fr)
+- Install it on your system (supports Windows, macOS, and Linux)
+
+---
+
+## 📦 2. Create an Encrypted Volume
+
+1. Open **VeraCrypt**
+2. Click on **`Create Volume`**
+3. Select **`Create an encrypted file container`** → click **Next**
+4. Choose **`Standard VeraCrypt volume`** → click **Next**
+5. Click **`Select File...`** and choose a name and location for your container (e.g., `SecretData.hc`)
+6. Click **Next**
+
+---
+
+## 🔐 3. Choose Encryption Settings
+
+- **Encryption Algorithm**: AES (recommended)
+- **Hash Algorithm**: SHA-512 (default is fine)
+
+Click **Next**
+
+---
+
+## 💾 4. Set Volume Size
+
+- Enter a size large enough to hold the files/folders you want to encrypt (e.g., `1 GB`, `5 GB`, etc.)
+- Click **Next**
+
+---
+
+## 🔑 5. Set Password
+
+- Use a strong password: mix upper/lowercase letters, numbers, and symbols
+- You can optionally use a keyfile for added security
+
+Click **Next**
+
+---
+
+## 🗃️ 6. Format the Volume
+
+- Choose the **filesystem type**:
+  - `NTFS` for large files and Windows systems
+  - `FAT` for cross-platform compatibility
+- Move your mouse randomly to generate entropy
+- Click **Format** to create the encrypted volume
+
+---
+
+## 🔄 7. Mount the Encrypted Volume
+
+1. Return to the VeraCrypt main window
+2. Select a free drive letter (e.g., `Z:` on Windows)
+3. Click **`Select File...`** and choose your `.hc` file
+4. Click **`Mount`**
+5. Enter your password → click **OK**
+
+You’ll now see a new virtual drive (e.g., `Z:`), ready for use.
+
+---
+
+## 📂 8. Use It Like a Secure Folder
+
+- Treat the mounted volume like a normal folder — add, edit, and remove files
+- When finished, go back to VeraCrypt and click **`Dismount`**
+
+Once dismounted, the contents are fully encrypted and inaccessible without your password.
+
+---
+
+## ✅ You're Done!
+
+Your data is now safely encrypted in a secure VeraCrypt container. Keep your password safe and back up your container if necessary.
+
+---
+
+## 📚 Learn More
+
+- [Official Website](https://www.veracrypt.fr)
+- [User Documentation](https://www.veracrypt.fr/en/Documentation.html)
+
